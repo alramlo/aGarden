@@ -12,6 +12,6 @@
     <string name="item_salir">Salir</string>
     <string name="item_acerca_de">Acerca de aGarden</string>
     <string name="titulo_salir">¿Desea salir?</string>
-    <string name="mensaje_salir">Pulse Si para salir!</string>
+    <string name="mensaje_salir">Pulse Si para salir!</string><string name="titulo_config">Configuración</string>
 
 </resources>

@@ -13,5 +13,6 @@
     <string name="item_acerca_de">About aGarden</string>
     <string name="titulo_salir">Exit application?</string>
     <string name="mensaje_salir">Click yes to exit!</string>
+    <string name="titulo_config">Settings</string>
 
 </resources>

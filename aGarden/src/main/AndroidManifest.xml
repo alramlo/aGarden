@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="es.uvp.agarden.ConfigurationActivity"
+            android:label="@string/titulo_config" >
+        </activity>
     </application>
 
 </manifest>
