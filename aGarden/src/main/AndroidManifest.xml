@@ -19,6 +19,18 @@
         <activity
             android:name="es.uvp.agarden.ConfigurationActivity"
             android:label="@string/titulo_config" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.uvp.agarden.MainActivity"
+                />
+        </activity>
+        <activity
+            android:name="es.uvp.agarden.AboutActivity"
+            android:label="@string/tituloAbout" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.uvp.agarden.MainActivity"
+                />
         </activity>
     </application>
 

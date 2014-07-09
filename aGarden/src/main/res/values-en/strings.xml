@@ -14,5 +14,6 @@
     <string name="titulo_salir">Exit application?</string>
     <string name="mensaje_salir">Click yes to exit!</string>
     <string name="titulo_config">Settings</string>
+    <string name="tituloAbout">About</string><string name="stringAbout">App diseñada por Alberto Ramírez Losilla y dirigida por Jose Luis Poza Luján para trabajo de fin de Grado en Ingeniería Informática de la UPV</string>
 
 </resources>

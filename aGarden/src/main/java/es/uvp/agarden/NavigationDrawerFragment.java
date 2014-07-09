@@ -249,11 +249,15 @@ public class NavigationDrawerFragment extends Fragment {
             return true;
         }
 
-        if (item.getItemId() == R.id.action_configuracion) {
-            //Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
-            Intent i = new Intent(this.getActivity(),ConfigurationActivity.class);
-            startActivity(i);
-            return true;
+        switch (item.getItemId()) {
+
+            case R.id.action_configuracion:
+                startActivity(new Intent(this.getActivity(),ConfigurationActivity.class));
+                return true;
+            case R.id.action_acerca_de:
+                startActivity(new Intent(this.getActivity(),AboutActivity.class));
+                return true;
+
         }
 
         return super.onOptionsItemSelected(item);
