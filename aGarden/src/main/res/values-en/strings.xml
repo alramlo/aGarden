@@ -13,7 +13,9 @@
     <string name="item_acerca_de">About aGarden</string>
     <string name="titulo_salir">Exit application?</string>
     <string name="mensaje_salir">Click yes to exit!</string>
-    <string name="titulo_config">Settings</string>
-    <string name="tituloAbout">About</string><string name="stringAbout">App diseñada por Alberto Ramírez Losilla y dirigida por Jose Luis Poza Luján para trabajo de fin de Grado en Ingeniería Informática de la UPV</string>
+    <string name="titulo_config"><u>Settings</u></string>
+    <string name="tituloAbout"><u>About</u></string>
+    <string name="stringAbout">App diseñada por Alberto Ramírez Losilla y dirigida por Jose Luis Poza Luján para trabajo de fin de Grado de Ingeniería Informática en la UPV para el curso 2013-2014</string>
+    <string name="email">alramlo@inf.upv.es</string>
 
 </resources>

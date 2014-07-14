@@ -21,5 +21,25 @@
         android:text="@string/stringAbout"
         android:id="@+id/textViewAcercaDe"
         style="@style/texto_normal"
-        android:autoText="false" />
+        android:autoText="false"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/alberto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:id="@+id/textViewEmail"
+        android:layout_gravity="center_horizontal"
+        android:linksClickable="false"
+        android:clickable="true"
+        style="@style/link"
+        android:background="#ffffff"
+        android:onClick="onClickEmail" />
 </LinearLayout>
