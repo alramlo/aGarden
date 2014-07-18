@@ -17,6 +17,13 @@
     <string name="tituloAbout"><u>Acerca de</u></string>
     <string name="stringAbout">App diseñada por Alberto Ramírez Losilla y dirigida por Jose Luis Poza Luján para trabajo de fin de Grado de Ingeniería Informática en la UPV para el curso 2013-2014</string>
     <string name="email">alramlo@inf.upv.es</string>
-    <string name="advertenciaInicio">Inicie sesión para comenzar a utilizar la app</string><string name="etiquetaIP">Dirección IP:</string><string name="punto">.</string><string name="ipDefecto">000</string>
+    <string name="advertenciaInicio">Inicie sesión para comenzar a utilizar la app</string>
+    <string name="etiquetaIP">Dirección IP:</string>
+    <string name="punto">.</string>
+    <string name="ipDefecto">000</string>
+    <string name="guardar">Guardar</string>
+    <string name="tituloSesion"><u>Sesión</u></string>
+    <string name="usuario">Usuario:</string>
+    <string name="password">Contraseña:</string><string name="botonSesion">Iniciar Sesión</string>
 
 </resources>

@@ -257,6 +257,9 @@ public class NavigationDrawerFragment extends Fragment {
             case R.id.action_acerca_de:
                 startActivity(new Intent(this.getActivity(),AboutActivity.class));
                 return true;
+            case R.id.action_sesion:
+                startActivity(new Intent(this.getActivity(),SesionActivity.class));
+                return true;
 
         }
 

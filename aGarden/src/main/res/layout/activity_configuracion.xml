@@ -11,12 +11,15 @@
         android:text="@string/titulo_config"
         android:id="@+id/textViewTituloConfig"
         android:layout_gravity="center_horizontal"
-        style="@style/texto_titulo" />
+        style="@style/texto_titulo"
+        android:layout_weight="1" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:layout_gravity="top">
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,7 +28,7 @@
             android:text="@string/etiquetaIP"
             android:id="@+id/textViewIP"
             style="@style/texto_normal"
-            android:layout_gravity="center_vertical" />
+            android:layout_gravity="top" />
 
         <EditText
             android:layout_width="40dp"
@@ -38,7 +41,8 @@
             android:inputType="number"
             android:text="@string/ipDefecto"
             android:maxLength="3"
-            android:onClick="onClickInput" />
+            android:onClick="onClickInput"
+            android:layout_gravity="top" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,7 +50,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/punto"
             android:id="@+id/textViewPunto1"
-            android:layout_gravity="center" />
+            android:layout_gravity="center|top" />
 
         <EditText
             style="@style/input"
@@ -59,7 +63,8 @@
             android:inputType="number"
             android:text="@string/ipDefecto"
             android:onClick="onClickInput"
-            android:maxLength="3" />
+            android:maxLength="3"
+            android:layout_gravity="top" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -67,7 +72,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/punto"
             android:id="@+id/textViewPunto2"
-            android:layout_gravity="center" />
+            android:layout_gravity="center|top" />
 
         <EditText
             style="@style/input"
@@ -80,7 +85,8 @@
             android:inputType="number"
             android:text="@string/ipDefecto"
             android:onClick="onClickInput"
-            android:maxLength="3" />
+            android:maxLength="3"
+            android:layout_gravity="top" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -88,7 +94,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/punto"
             android:id="@+id/textViewPunto3"
-            android:layout_gravity="center" />
+            android:layout_gravity="center|top" />
 
         <EditText
             style="@style/input"
@@ -101,14 +107,24 @@
             android:inputType="number"
             android:text="@string/ipDefecto"
             android:onClick="onClickInput"
-            android:maxLength="3" />
+            android:maxLength="3"
+            android:layout_gravity="top" />
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/imageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#000000" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_margin="10dp" />
+        android:text="@string/guardar"
+        android:id="@+id/buttonGuardarConf"
+        android:layout_margin="10dp"
+        style="@style/boton_app" />
 
 </LinearLayout>
