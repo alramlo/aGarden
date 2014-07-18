@@ -7,7 +7,7 @@
     <string name="title_section3">Sección 3</string>
     <string name="navigation_drawer_open">Abrir navigation drawer</string>
     <string name="navigation_drawer_close">Cerrar navigation drawer</string>
-    <string name="item_perfil">Iniciar sesión</string>
+    <string name="item_sesion">Sesión</string>
     <string name="item_configuracion">Configuración</string>
     <string name="item_salir">Salir</string>
     <string name="item_acerca_de">Acerca de aGarden</string>
@@ -17,5 +17,6 @@
     <string name="tituloAbout"><u>Acerca de</u></string>
     <string name="stringAbout">App diseñada por Alberto Ramírez Losilla y dirigida por Jose Luis Poza Luján para trabajo de fin de Grado de Ingeniería Informática en la UPV para el curso 2013-2014</string>
     <string name="email">alramlo@inf.upv.es</string>
+    <string name="advertenciaInicio">Inicie sesión para comenzar a utilizar la app</string><string name="etiquetaIP">Dirección IP:</string><string name="punto">.</string><string name="ipDefecto">000</string>
 
 </resources>

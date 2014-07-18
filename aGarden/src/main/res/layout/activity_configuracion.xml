@@ -12,4 +12,103 @@
         android:id="@+id/textViewTituloConfig"
         android:layout_gravity="center_horizontal"
         style="@style/texto_titulo" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/etiquetaIP"
+            android:id="@+id/textViewIP"
+            style="@style/texto_normal"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/editTextIP1"
+            android:background="#ffffff"
+            style="@style/input"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:text="@string/ipDefecto"
+            android:maxLength="3"
+            android:onClick="onClickInput" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/punto"
+            android:id="@+id/textViewPunto1"
+            android:layout_gravity="center" />
+
+        <EditText
+            style="@style/input"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/editTextIP2"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:text="@string/ipDefecto"
+            android:onClick="onClickInput"
+            android:maxLength="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/punto"
+            android:id="@+id/textViewPunto2"
+            android:layout_gravity="center" />
+
+        <EditText
+            style="@style/input"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/editTextIP3"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:text="@string/ipDefecto"
+            android:onClick="onClickInput"
+            android:maxLength="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/punto"
+            android:id="@+id/textViewPunto3"
+            android:layout_gravity="center" />
+
+        <EditText
+            style="@style/input"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/editTextIP4"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:text="@string/ipDefecto"
+            android:onClick="onClickInput"
+            android:maxLength="3" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_margin="10dp" />
+
 </LinearLayout>
