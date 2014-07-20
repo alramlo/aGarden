@@ -125,6 +125,7 @@
         android:text="@string/guardar"
         android:id="@+id/buttonGuardarConf"
         android:layout_margin="10dp"
-        style="@style/boton_app" />
+        style="@style/boton_app"
+        android:onClick="saveState" />
 
 </LinearLayout>

@@ -24,6 +24,10 @@
     <string name="guardar">Guardar</string>
     <string name="tituloSesion"><u>Sesión</u></string>
     <string name="usuario">Usuario:</string>
-    <string name="password">Contraseña:</string><string name="botonSesion">Iniciar Sesión</string>
+    <string name="password">Contraseña:</string>
+    <string name="botonSesion">Iniciar Sesión</string>
+    <string name="mensajeSesion">Inicie sesión para usar la aplicación</string>
+    <string name="mensajeIpIncorrecta">Ip incompleta</string>
+    <string name="guardadoExito">Guardado con éxito</string>
 
 </resources>

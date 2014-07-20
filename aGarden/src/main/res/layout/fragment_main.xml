@@ -4,13 +4,4 @@
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/advertenciaInicio"
-        android:id="@+id/textViewInicio"
-        android:layout_gravity="left"
-        style="@style/advertencia"
-        android:background="#ffffff" />
 </LinearLayout>
