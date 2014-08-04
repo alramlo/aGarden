@@ -72,6 +72,7 @@
         android:layout_height="wrap_content"
         android:text="@string/botonSesion"
         android:id="@+id/buttonIniciarSesion"
-        style="@style/boton_app" />
+        style="@style/boton_app"
+        android:onClick="login" />
 
 </LinearLayout>

@@ -15,7 +15,7 @@
     <string name="mensaje_salir">Pulse Si para salir!</string>
     <string name="titulo_config"><u>Configuración</u></string>
     <string name="tituloAbout"><u>Acerca de</u></string>
-    <string name="stringAbout">App diseñada por Alberto Ramírez Losilla y dirigida por Jose Luis Poza Luján para trabajo de fin de Grado de Ingeniería Informática en la UPV para el curso 2013-2014</string>
+    <string name="stringAbout">App diseñada por Alberto Ramírez Losilla y dirigida por el Doctor Jose Luis Poza Luján para trabajo de fin de Grado de Ingeniería Informática en la UPV para el curso 2013-2014</string>
     <string name="email">alramlo@inf.upv.es</string>
     <string name="advertenciaInicio">Inicie sesión para comenzar a utilizar la app</string>
     <string name="etiquetaIP">Dirección IP:</string>
@@ -29,4 +29,5 @@
     <string name="mensajeSesion">Inicie sesión para usar la aplicación</string>
     <string name="mensajeIpIncorrecta">Ip incompleta</string>
     <string name="guardadoExito">Guardado con éxito</string>
+    <string name="noInternet">Conexión de datos no disponible</string>
 </resources>
