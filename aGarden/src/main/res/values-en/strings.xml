@@ -30,5 +30,11 @@
     <string name="mensajeIpIncorrecta">Ip incompleta</string>
     <string name="guardadoExito">Guardado con éxito</string>
     <string name="noInternet">Conexión de datos no disponible</string>
-
+    <string name="noIp">Introduzca Ip del Servidor</string>
+    <string name="loginOk">Ha iniciado sesión correctamente</string>
+    <string name="loginDenied">Error en usuario o contraseña</string>
+    <string name="errorApp">Error app</string>
+    <string name="errorServicio">Error Servicio</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="mensajeLogout">Ha cerrado sesión correctamente</string>
 </resources>

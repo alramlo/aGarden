@@ -35,7 +35,7 @@
             <EditText
                 android:layout_width="150dp"
                 android:layout_height="30dp"
-                android:id="@+id/editText"
+                android:id="@+id/editTextUser"
                 style="@style/input" />
         </TableRow>
 
@@ -56,7 +56,7 @@
                 android:layout_height="30dp"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:id="@+id/editText2"
+                android:id="@+id/editTextPass"
                 style="@style/input" />
         </TableRow>
     </TableLayout>
@@ -71,7 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/botonSesion"
-        android:id="@+id/buttonIniciarSesion"
+        android:id="@+id/buttonSession"
         style="@style/boton_app"
         android:onClick="login" />
 
