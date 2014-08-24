@@ -21,6 +21,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 ;
 
@@ -159,6 +160,13 @@ public class NavigationDrawerFragment extends Fragment {
                 super.onDrawerOpened(drawerView);
                 if (!isAdded()) {
                     return;
+                }
+
+                Common common = new Common(drawerView.getContext());
+                if(common.getSessionStatus().equals(Constants.DESCONECTADO)){
+                    //Mostrar mensaje iniciar sesión
+                    Toast toast = Toast.makeText(drawerView.getContext(),R.string.mensajeSesion,Toast.LENGTH_LONG);
+                    toast.show();
                 }
 
                 if (!mUserLearnedDrawer) {

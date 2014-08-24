@@ -24,17 +24,10 @@ public class ConfigurationActivity extends ActionBarActivity{
 
     }
 
-    public void onClickInput(View view){
-
-        EditText editText = (EditText) view;
-        editText.setText("");
-
-    }
-
     public void saveState(View view){
 
         //Comprobamos si la ip está bien formada
-        if(((EditText) findViewById(R.id.editTextIP1)).getText().equals("") || ((EditText) findViewById(R.id.editTextIP2)).getText().equals("") || ((EditText) findViewById(R.id.editTextIP3)).getText().equals("") || ((EditText) findViewById(R.id.editTextIP4)).getText().equals(""))
+        if(((EditText) findViewById(R.id.editTextIP1)).getText().toString().equals("") || ((EditText) findViewById(R.id.editTextIP2)).getText().toString().equals("") || ((EditText) findViewById(R.id.editTextIP3)).getText().toString().equals("") || ((EditText) findViewById(R.id.editTextIP4)).getText().toString().equals(""))
         {
             Toast toast = Toast.makeText(getApplicationContext(),R.string.mensajeIpIncorrecta,Toast.LENGTH_LONG);
             toast.show();

@@ -18,7 +18,8 @@
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="10">
+        android:layout_weight="10"
+        android:layout_marginLeft="10dp">
 
         <TableRow
             android:layout_width="fill_parent"
@@ -30,7 +31,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/usuario"
                 android:id="@+id/textViewUsuario"
-                style="@style/texto_normal" />
+                style="@style/texto_normal"
+                android:textStyle="bold" />
 
             <EditText
                 android:layout_width="150dp"
@@ -49,7 +51,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/password"
                 android:id="@+id/textViewPassword"
-                style="@style/texto_normal" />
+                style="@style/texto_normal"
+                android:textStyle="bold" />
 
             <EditText
                 android:layout_width="150dp"
