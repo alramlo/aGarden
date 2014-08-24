@@ -180,8 +180,10 @@ public class SesionActivity extends ActionBarActivity {
 
                 //preparamos los parámetros
                 List<NameValuePair> pairs = new ArrayList<NameValuePair>();
-                pairs.add(new BasicNameValuePair("name",((EditText) findViewById(R.id.editTextUser)).getText().toString()));
-                pairs.add(new BasicNameValuePair("pass",((EditText) findViewById(R.id.editTextPass)).getText().toString()));
+                String name = ((EditText) findViewById(R.id.editTextUser)).getText().toString();
+                String pass = ((EditText) findViewById(R.id.editTextPass)).getText().toString();
+                pairs.add(new BasicNameValuePair("name",common.encrypt(name)));
+                pairs.add(new BasicNameValuePair("pass",common.encrypt(pass)));
 
                 //Preparamos la url
                 String stringUrl = common.createUrl(direcciónIp,Constants.URL_LOGIN);
@@ -201,7 +203,7 @@ public class SesionActivity extends ActionBarActivity {
                     case 200: bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
                               String response = bufferedReader.readLine();
                               //Guardamos el estado
-                              common.saveSessionStatus(response);
+                              common.saveStringConexion(common.decrypt(response));
                               common.saveSessionStatus(Constants.CONECTADO);
                               common.saveUser(((EditText) findViewById(R.id.editTextUser)).getText().toString());
                               return Constants.TRUE;
@@ -209,6 +211,9 @@ public class SesionActivity extends ActionBarActivity {
 
             }catch (Exception e){
                 e.printStackTrace();
+                common.saveStringConexion(Constants.DESCONECTADO);
+                common.removeKey("user");
+                common.removeKey("stringConexion");
                 return Constants.ERROR_APP;
             }
 

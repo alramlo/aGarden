@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
+import org.jasypt.util.text.BasicTextEncryptor;
+
 /**
  * Created by Alberto on 06/08/14.
  */
@@ -71,6 +73,22 @@ public class Common {
 
     }
 
+    public void saveString(String string, String key){
+
+        SharedPreferences sharedPreferences = context.getSharedPreferences("preferencias", Activity.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(key,string);
+        editor.commit();
+
+    }
+
+    public String getString(String key){
+
+        SharedPreferences sharedPreferences = context.getSharedPreferences("preferencias", Activity.MODE_PRIVATE);
+        String string = sharedPreferences.getString(key,null);
+        return string;
+
+    }
     public void removeKey(String key){
 
         SharedPreferences sharedPreferences = context.getSharedPreferences("preferencias",Activity.MODE_PRIVATE);
@@ -115,5 +133,23 @@ public class Common {
         return user;
 
     }
+
+
+    public String encrypt(String string){
+
+        BasicTextEncryptor basicTextEncryptor = new BasicTextEncryptor();
+        basicTextEncryptor.setPassword("52()^Z]I{pZ0e37<z_(kb.0H");
+        return basicTextEncryptor.encrypt(string);
+
+    }
+
+    public String decrypt(String string){
+
+        BasicTextEncryptor basicTextEncryptor = new BasicTextEncryptor();
+        basicTextEncryptor.setPassword("52()^Z]I{pZ0e37<z_(kb.0H");
+        return basicTextEncryptor.decrypt(string);
+
+    }
+
 
 }
