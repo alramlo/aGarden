@@ -1,6 +1,7 @@
 package es.uvp.agarden;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -22,6 +23,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.util.ArrayList;
+import java.util.List;
 
 ;
 
@@ -56,12 +63,15 @@ public class NavigationDrawerFragment extends Fragment {
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerListView;
     private View mFragmentContainerView;
-
+    private Common common;
     private int mCurrentSelectedPosition = 0;
     private boolean mFromSavedInstanceState;
     private boolean mUserLearnedDrawer;
+    private List<Area> listaAreas;
 
     public NavigationDrawerFragment() {
+
+
     }
 
     @Override
@@ -89,9 +99,56 @@ public class NavigationDrawerFragment extends Fragment {
         setHasOptionsMenu(true);
     }
 
+    public String[] leerAreas(){
+
+        Context context = getActivity();
+        common = new Common(getActivity().getApplicationContext());
+
+        String [] stringsAreas;
+        //Obtenemos las áreas del json almacenado en sharedPreferences
+        String json = common.getString("jsonAreas");
+
+        if(json==null){
+
+            stringsAreas = new String[1];
+            stringsAreas[0]="Home";
+        }
+        else{
+            //Leemos las áreas del json
+            Gson gson = new Gson();
+            List<Area> listaAreas = new ArrayList<Area>();
+            listaAreas = gson.fromJson(json,new TypeToken<ArrayList<Area>>(){}.getType());
+            //Los pasamos a un array de strings
+            stringsAreas = new String[listaAreas.size()+1];
+            stringsAreas[0] = "Home";
+
+            for (int i=0; i<listaAreas.size();i++){
+                Area area = listaAreas.get(i);
+                String name = area.getName();
+                stringsAreas[i+1]= name ;
+
+            }
+        }
+
+        return stringsAreas;
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mDrawerListView.setAdapter(new ArrayAdapter<String>(
+                getActionBar().getThemedContext(),
+                android.R.layout.simple_list_item_1,
+                android.R.id.text1,
+                leerAreas()));
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
+
+
         mDrawerListView = (ListView) inflater.inflate(
                 R.layout.fragment_navigation_drawer, container, false);
         mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -104,11 +161,7 @@ public class NavigationDrawerFragment extends Fragment {
                 getActionBar().getThemedContext(),
                 android.R.layout.simple_list_item_1,
                 android.R.id.text1,
-                new String[]{
-                        getString(R.string.title_section1),
-                        getString(R.string.title_section2),
-                        getString(R.string.title_section3),
-                }));
+                leerAreas()));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
     }

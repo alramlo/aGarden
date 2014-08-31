@@ -2,9 +2,7 @@
 <resources>
 
     <string name="app_name">aGarden</string>
-    <string name="title_section1">Sección 1</string>
-    <string name="title_section2">Sección 2</string>
-    <string name="title_section3">Sección 3</string>
+    <string name="title_home">Home</string>
     <string name="navigation_drawer_open">Abrir navigation drawer</string>
     <string name="navigation_drawer_close">Cerrar navigation drawer</string>
     <string name="item_sesion">Sesión</string>

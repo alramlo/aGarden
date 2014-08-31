@@ -24,25 +24,26 @@ public class Common {
     //Método para comprobar si hay conexión de datos
     public boolean checkInternetConnection(){
 
-        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 
-        if (connectivityManager!=null){
+            ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 
-            NetworkInfo info3G = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
-            NetworkInfo infoWifi = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+            if (connectivityManager!=null){
 
-            //Comprobamos si hay conexión 3G
-            if( info3G!=null && info3G.isAvailable() && info3G.getDetailedState() == NetworkInfo.DetailedState.CONNECTED )
-                return true;
+                NetworkInfo info3G = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+                NetworkInfo infoWifi = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
 
-            //Comprobamos si hay conexión WIFI
-            if( infoWifi!=null && infoWifi.isAvailable() && infoWifi.getDetailedState() == NetworkInfo.DetailedState.CONNECTED )
-                return true;
+                //Comprobamos si hay conexión 3G
+                if( info3G!=null && info3G.isAvailable() && info3G.getDetailedState() == NetworkInfo.DetailedState.CONNECTED )
+                    return true;
 
-        }
+                //Comprobamos si hay conexión WIFI
+                if( infoWifi!=null && infoWifi.isAvailable() && infoWifi.getDetailedState() == NetworkInfo.DetailedState.CONNECTED )
+                    return true;
 
-        //No hay ninguna conexión disponible
-        return false;
+            }
+
+            //No hay ninguna conexión disponible
+            return false;
     }
 
 

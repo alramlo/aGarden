@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -17,6 +18,7 @@ import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -113,6 +115,7 @@ public class SesionActivity extends ActionBarActivity {
             common.saveSessionStatus(Constants.DESCONECTADO);
             common.removeKey("user");
             common.removeKey("stringConexion");
+            common.removeKey("jsonAreas");
 
             actualizarVista(common.getSessionStatus());
 
@@ -203,10 +206,14 @@ public class SesionActivity extends ActionBarActivity {
                     case 200: bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
                               String response = bufferedReader.readLine();
                               //Guardamos el estado
-                              common.saveStringConexion(common.decrypt(response));
+                              String stringConexion = common.decrypt(response);
+                              common.saveStringConexion(stringConexion);
                               common.saveSessionStatus(Constants.CONECTADO);
                               common.saveUser(((EditText) findViewById(R.id.editTextUser)).getText().toString());
-                              return Constants.TRUE;
+                              if(cargarAreas(name,stringConexion))
+                                return Constants.TRUE;
+                              else
+                                return Constants.ERROR_SERVICE;
                 }
 
             }catch (Exception e){
@@ -248,6 +255,40 @@ public class SesionActivity extends ActionBarActivity {
 
             //Activamos el botón
             ((Button)findViewById(R.id.buttonSession)).setEnabled(true);
+
+        }
+
+        protected boolean cargarAreas(String name, String string) throws IOException {
+
+            BufferedReader bufferedReader = null;
+            HttpURLConnection httpURLConnection = null;
+
+            List<NameValuePair> pairs = new ArrayList<NameValuePair>();
+            pairs.add(new BasicNameValuePair("name",common.encrypt(name)));
+            pairs.add(new BasicNameValuePair("string",common.encrypt(string)));
+
+            //Preparamos la url
+            String stringUrl = common.createUrl(direcciónIp,Constants.URL_AREAS);
+            URL url = new URL(stringUrl+"?"+ URLEncodedUtils.format(pairs,"utf-8"));
+
+            //Preparamos y abrimos la conexión
+            httpURLConnection = (HttpURLConnection) url.openConnection();
+            httpURLConnection.setRequestMethod("GET");
+            httpURLConnection.setRequestProperty("Accept","aplication/json");
+
+            Integer codigo = httpURLConnection.getResponseCode();
+            if(codigo==200){
+
+                bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
+                String response = bufferedReader.readLine();
+                common.saveString(response,"jsonAreas");
+                Log.d("debug","Json recibido: "+response);
+                return true;
+            }
+            else{
+                return false;
+            }
+
 
         }
     }
