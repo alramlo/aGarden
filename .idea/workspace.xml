@@ -40,12 +40,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="530bd1c2-1a27-41ae-9953-9dd8818779d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/AreaActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aGarden/src/main/res/layout/activity_area.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aGarden/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/aGarden/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/AreaActivity.java" afterPath="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/AreaActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/MainActivity.java" afterPath="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/NavigationDrawerFragment.java" afterPath="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/NavigationDrawerFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/SesionActivity.java" afterPath="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/SesionActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aGarden/src/main/res/layout/activity_area.xml" afterPath="$PROJECT_DIR$/aGarden/src/main/res/layout/activity_area.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aGarden/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/aGarden/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aGarden/src/main/res/values-en/strings.xml" afterPath="$PROJECT_DIR$/aGarden/src/main/res/values-en/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -134,7 +132,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/NavigationDrawerFragment.java" line="162" class="es.uvp.agarden.NavigationDrawerFragment$2" package="es.uvp.agarden">
+      <breakpoint url="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/NavigationDrawerFragment.java" line="159" class="es.uvp.agarden.NavigationDrawerFragment$2" package="es.uvp.agarden">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -162,12 +160,11 @@
       <file leaf-file-name="NavigationDrawerFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/NavigationDrawerFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="52" selection-start="5567" selection-end="5567" vertical-scroll-proportion="0.0" vertical-offset="2129" max-vertical-offset="5763">
+            <state line="115" column="53" selection-start="3843" selection-end="3843" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="5797">
               <folding>
-                <element signature="e#7432#7463#0" expanded="true" />
-                <element signature="e#7532#7564#0" expanded="true" />
-                <element signature="e#8433#8455#0" expanded="true" />
-                <element signature="e#12702#12719#0" expanded="true" />
+                <element signature="e#5065#5691#0" expanded="true" />
+                <element signature="e#5680#5681#0" expanded="true" />
+                <element signature="e#8476#8502#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,12 +172,12 @@
       </file>
       <file leaf-file-name="activity_area.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aGarden/src/main/res/layout/activity_area.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="38" selection-start="770" selection-end="770" vertical-scroll-proportion="-4.714286" vertical-offset="276" max-vertical-offset="731">
+          <provider editor-type-id="text-editor">
+            <state line="48" column="46" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
@@ -188,31 +185,8 @@
       <file leaf-file-name="AreaActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/AreaActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="33" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.41371158" vertical-offset="726" max-vertical-offset="1156">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1372#1410#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SesionActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/SesionActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="43" selection-start="7721" selection-end="7721" vertical-scroll-proportion="0.0" vertical-offset="4163" max-vertical-offset="4760">
-              <folding>
-                <element signature="e#1689#1704#0" expanded="true" />
-                <element signature="e#2333#2348#0" expanded="true" />
-                <element signature="e#2742#2762#0" expanded="true" />
-                <element signature="e#3691#3713#0" expanded="true" />
-                <element signature="e#3965#3984#0" expanded="true" />
-                <element signature="e#4486#4499#0" expanded="true" />
-                <element signature="e#8270#8286#0" expanded="true" />
-                <element signature="e#8524#8544#0" expanded="true" />
-                <element signature="e#8699#8721#0" expanded="true" />
-                <element signature="e#8876#8893#0" expanded="true" />
-              </folding>
+            <state line="74" column="31" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.63829786" vertical-offset="852" max-vertical-offset="1343">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -610,12 +584,13 @@
         <option value="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/Common.java" />
         <option value="$PROJECT_DIR$/aGarden/src/main/res/layout/fragment_area.xml" />
         <option value="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/AreaFragment.java" />
-        <option value="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/MainActivity.java" />
         <option value="$PROJECT_DIR$/aGarden/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/SesionActivity.java" />
-        <option value="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/NavigationDrawerFragment.java" />
-        <option value="$PROJECT_DIR$/aGarden/src/main/res/values-en/strings.xml" />
+        <option value="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/MainActivity.java" />
         <option value="$PROJECT_DIR$/aGarden/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/aGarden/src/main/res/values-en/strings.xml" />
+        <option value="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/NavigationDrawerFragment.java" />
+        <option value="$PROJECT_DIR$/aGarden/src/main/res/layout/activity_area.xml" />
         <option value="$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/AreaActivity.java" />
       </list>
     </option>
@@ -670,6 +645,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -877,7 +853,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -939,19 +914,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -977,6 +939,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1150,7 +1125,11 @@
       <created>1409496654741</created>
       <updated>1409496654741</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Crear ventana de área">
+      <created>1409572126593</created>
+      <updated>1409572126593</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1232,7 +1211,8 @@
     <MESSAGE value="Nuevo fondo y comprobación de la ip" />
     <MESSAGE value="Encriptado de información de sesión" />
     <MESSAGE value="Leer áreas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leer áreas" />
+    <MESSAGE value="Crear ventana de área" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crear ventana de área" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1420,9 +1400,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aGarden/src/main/res/menu/global.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="8" selection-start="263" selection-end="297" vertical-scroll-proportion="0.20094563" vertical-offset="0" max-vertical-offset="423">
-          <folding />
-        </state>
+        <state line="5" column="8" selection-start="263" selection-end="297" vertical-scroll-proportion="0.20094563" vertical-offset="0" max-vertical-offset="423" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/Constants.java">
@@ -1518,9 +1496,30 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/SesionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="223" column="43" selection-start="7721" selection-end="7721" vertical-scroll-proportion="0.0" vertical-offset="4163" max-vertical-offset="4760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-19/com/android/internal/os/ZygoteInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="781" column="0" selection-start="26986" selection-end="26986" vertical-scroll-proportion="0.75365853" vertical-offset="12220" max-vertical-offset="12835" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aGarden/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
+          <folding>
+            <element signature="e#402#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/aGarden/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="804" selection-end="804" vertical-scroll-proportion="0.66753924" vertical-offset="0" max-vertical-offset="629">
+        <state line="15" column="44" selection-start="804" selection-end="804" vertical-scroll-proportion="0.020942409" vertical-offset="247" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
@@ -1530,94 +1529,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.0" vertical-offset="1015" max-vertical-offset="2431">
+        <state line="33" column="29" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2431">
           <folding>
-            <element signature="e#1912#1942#0" expanded="true" />
+            <element signature="e#1191#1221#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aGarden/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/aGarden/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="1292">
-          <folding>
-            <element signature="e#402#420#0" expanded="true" />
-            <element signature="e#563#581#0" expanded="true" />
-            <element signature="e#1013#1036#0" expanded="true" />
-            <element signature="e#1422#1444#0" expanded="true" />
-            <element signature="e#1829#1850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/SesionActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="43" selection-start="7721" selection-end="7721" vertical-scroll-proportion="0.0" vertical-offset="4163" max-vertical-offset="4760">
-          <folding>
-            <element signature="e#1689#1704#0" expanded="true" />
-            <element signature="e#2333#2348#0" expanded="true" />
-            <element signature="e#2742#2762#0" expanded="true" />
-            <element signature="e#3691#3713#0" expanded="true" />
-            <element signature="e#3965#3984#0" expanded="true" />
-            <element signature="e#4486#4499#0" expanded="true" />
-            <element signature="e#8270#8286#0" expanded="true" />
-            <element signature="e#8524#8544#0" expanded="true" />
-            <element signature="e#8699#8721#0" expanded="true" />
-            <element signature="e#8876#8893#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aGarden/src/main/res/layout/activity_area.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="770" selection-end="770" vertical-scroll-proportion="-4.714286" vertical-offset="276" max-vertical-offset="731">
+        <state line="38" column="34" selection-start="2218" selection-end="2267" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="782">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-19/com/android/internal/os/ZygoteInit.java">
+    <entry file="file://$PROJECT_DIR$/aGarden/src/main/res/values-en/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="781" column="0" selection-start="26986" selection-end="26986" vertical-scroll-proportion="0.75365853" vertical-offset="12220" max-vertical-offset="12835">
+        <state line="40" column="48" selection-start="2363" selection-end="2363" vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/NavigationDrawerFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="52" selection-start="5567" selection-end="5567" vertical-scroll-proportion="0.0" vertical-offset="2129" max-vertical-offset="5763">
+        <state line="115" column="53" selection-start="3843" selection-end="3843" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="5797">
           <folding>
-            <element signature="e#7432#7463#0" expanded="true" />
-            <element signature="e#7532#7564#0" expanded="true" />
-            <element signature="e#8433#8455#0" expanded="true" />
-            <element signature="e#12702#12719#0" expanded="true" />
+            <element signature="e#5065#5691#0" expanded="true" />
+            <element signature="e#5680#5681#0" expanded="true" />
+            <element signature="e#8476#8502#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aGarden/src/main/res/values-en/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="4" selection-start="2286" selection-end="2389" vertical-scroll-proportion="0.7097561" vertical-offset="372" max-vertical-offset="816">
+    <entry file="file://$PROJECT_DIR$/aGarden/src/main/res/layout/activity_area.xml">
+      <provider editor-type-id="text-editor">
+        <state line="48" column="46" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aGarden/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="48" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.7512195" vertical-offset="338" max-vertical-offset="782">
-          <folding />
-        </state>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aGarden/src/main/java/es/uvp/agarden/AreaActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="33" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.41371158" vertical-offset="726" max-vertical-offset="1156">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1372#1410#0" expanded="true" />
-          </folding>
+        <state line="74" column="31" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.63829786" vertical-offset="852" max-vertical-offset="1343">
+          <folding />
         </state>
       </provider>
     </entry>

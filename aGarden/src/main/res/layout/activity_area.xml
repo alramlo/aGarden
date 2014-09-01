@@ -25,13 +25,29 @@
                 android:id="@+id/tab1"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/tablaOperaciones"
+                    android:stretchColumns="*"></TableLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/tab2"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/tablaEstado"
+                    android:orientation="vertical"
+                    android:stretchColumns="*"></TableLayout>
+            </LinearLayout>
 
         </FrameLayout>
     </LinearLayout>

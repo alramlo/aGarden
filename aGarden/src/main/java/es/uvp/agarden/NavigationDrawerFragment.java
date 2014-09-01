@@ -113,7 +113,7 @@ public class NavigationDrawerFragment extends Fragment {
         if(json==null){
 
             stringsAreas = new String[1];
-            stringsAreas[0]="Home";
+            stringsAreas[0]=getString(R.string.inicio);
         }
         else{
             //Leemos las áreas del json
@@ -121,13 +121,12 @@ public class NavigationDrawerFragment extends Fragment {
             List<Area> listaAreas = new ArrayList<Area>();
             listaAreas = gson.fromJson(json,new TypeToken<ArrayList<Area>>(){}.getType());
             //Los pasamos a un array de strings
-            stringsAreas = new String[listaAreas.size()+1];
-            stringsAreas[0] = "Home";
+            stringsAreas = new String[listaAreas.size()];
 
             for (int i=0; i<listaAreas.size();i++){
                 Area area = listaAreas.get(i);
                 String name = area.getName();
-                stringsAreas[i+1]= name ;
+                stringsAreas[i]= name ;
 
             }
         }
@@ -158,14 +157,14 @@ public class NavigationDrawerFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 selectItem(position);
 
-                if (position!=0){
 
-                    Intent i = new Intent(getActivity().getApplicationContext(),AreaActivity.class);
-                    String itemSelected = (String) mDrawerListView.getItemAtPosition(position);
-                    i.putExtra("area",itemSelected);
-                    startActivity(i);
+                    if(common.getSessionStatus().equals(Constants.CONECTADO)){
+                        Intent i = new Intent(getActivity().getApplicationContext(),AreaActivity.class);
+                        String itemSelected = (String) mDrawerListView.getItemAtPosition(position);
+                        i.putExtra("area",itemSelected);
+                        startActivity(i);
+                    }
 
-                }
             }
         });
         mDrawerListView.setAdapter(new ArrayAdapter<String>(
@@ -232,7 +231,7 @@ public class NavigationDrawerFragment extends Fragment {
                 Common common = new Common(drawerView.getContext());
                 if(common.getSessionStatus().equals(Constants.DESCONECTADO)){
                     //Mostrar mensaje iniciar sesión
-                    Toast toast = Toast.makeText(drawerView.getContext(),R.string.mensajeSesion,Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(drawerView.getContext(),R.string.advertenciaInicio,Toast.LENGTH_LONG);
                     toast.show();
                 }
 

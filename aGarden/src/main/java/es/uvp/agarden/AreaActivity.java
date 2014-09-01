@@ -4,7 +4,11 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.TabHost;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 /**
  * Created by Alberto on 31/08/14.
@@ -56,6 +60,21 @@ public class AreaActivity extends ActionBarActivity {
         tabHost.addTab(tabSpec);
 
         tabHost.setCurrentTabByTag("Operaciones");
+
+        //añadimos el contenido a las pestañas
+        TableLayout tableLayout = (TableLayout) findViewById(R.id.tablaEstado);
+
+        TableRow row = new TableRow(this);
+
+        TextView textView = new TextView(this);
+        textView.setText("Prueba");
+        row.addView(textView);
+
+        ImageView imageView = new ImageView(this);
+        imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_config));
+        row.addView(imageView);
+
+        tableLayout.addView(row);
 
 
     }

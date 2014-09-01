@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">aGarden</string>
+    <string name="app_name">iEnvironment</string>
     <string name="title_home">Home</string>
     <string name="navigation_drawer_open">Abrir navigation drawer</string>
     <string name="navigation_drawer_close">Cerrar navigation drawer</string>
@@ -24,7 +24,6 @@
     <string name="usuario">Usuario:</string>
     <string name="password">Contraseña:</string>
     <string name="botonSesion">Iniciar Sesión</string>
-    <string name="mensajeSesion">Inicie sesión para usar la aplicación</string>
     <string name="mensajeIpIncorrecta">Ip incompleta</string>
     <string name="guardadoExito">Guardado con éxito</string>
     <string name="noInternet">Conexión de datos no disponible</string>
@@ -37,4 +36,5 @@
     <string name="mensajeLogout">Ha cerrado sesión correctamente</string>
     <string name="pestañaOperaciones">Operaciones</string>
     <string name="pestañaEstado">Estado</string>
+    <string name="inicio">Inicie sesión</string>
 </resources>
