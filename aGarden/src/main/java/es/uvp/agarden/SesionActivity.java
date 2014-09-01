@@ -221,6 +221,7 @@ public class SesionActivity extends ActionBarActivity {
                 common.saveStringConexion(Constants.DESCONECTADO);
                 common.removeKey("user");
                 common.removeKey("stringConexion");
+                common.removeKey("jsonAreas");
                 return Constants.ERROR_APP;
             }
 

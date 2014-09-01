@@ -37,4 +37,6 @@
     <string name="errorServicio">Error Servicio</string>
     <string name="logout">Cerrar sesión</string>
     <string name="mensajeLogout">Ha cerrado sesión correctamente</string>
+    <string name="pestañaOperaciones">Operaciones</string>
+    <string name="pestañaEstado">Estado</string>
 </resources>

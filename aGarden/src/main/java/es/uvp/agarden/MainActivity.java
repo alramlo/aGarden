@@ -50,6 +50,9 @@ public class MainActivity extends ActionBarActivity
         fragmentManager.beginTransaction()
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();
+
+
+
     }
 
     public void onSectionAttached(int number) {

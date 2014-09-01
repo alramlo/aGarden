@@ -53,6 +53,18 @@
                 android:value="es.uvp.agarden.MainActivity"
                 />
         </activity>
+
+        <activity
+            android:name="es.uvp.agarden.AreaActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.uvp.agarden.MainActivity"
+                />
+
+
+        </activity>
     </application>
 
 </manifest>

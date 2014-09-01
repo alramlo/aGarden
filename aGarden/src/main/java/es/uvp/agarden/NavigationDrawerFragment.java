@@ -90,6 +90,8 @@ public class NavigationDrawerFragment extends Fragment {
 
         // Select either the default item (0) or the last selected item.
         selectItem(mCurrentSelectedPosition);
+
+
     }
 
     @Override
@@ -155,6 +157,15 @@ public class NavigationDrawerFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 selectItem(position);
+
+                if (position!=0){
+
+                    Intent i = new Intent(getActivity().getApplicationContext(),AreaActivity.class);
+                    String itemSelected = (String) mDrawerListView.getItemAtPosition(position);
+                    i.putExtra("area",itemSelected);
+                    startActivity(i);
+
+                }
             }
         });
         mDrawerListView.setAdapter(new ArrayAdapter<String>(
@@ -163,6 +174,9 @@ public class NavigationDrawerFragment extends Fragment {
                 android.R.id.text1,
                 leerAreas()));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
+
+
+
         return mDrawerListView;
     }
 
