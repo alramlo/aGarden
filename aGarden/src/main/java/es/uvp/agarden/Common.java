@@ -6,7 +6,13 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import org.jasypt.util.text.BasicTextEncryptor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Alberto on 06/08/14.
@@ -149,6 +155,45 @@ public class Common {
         BasicTextEncryptor basicTextEncryptor = new BasicTextEncryptor();
         basicTextEncryptor.setPassword("52()^Z]I{pZ0e37<z_(kb.0H");
         return basicTextEncryptor.decrypt(string);
+
+    }
+
+    public String findIdAreaByName(String name){
+
+        String idArea=null;
+
+        SharedPreferences sharedPreferences = context.getSharedPreferences("preferencias", Activity.MODE_PRIVATE);
+        String json = sharedPreferences.getString("jsonAreas",null);
+
+        if(json==null){
+
+            return null;
+        }
+
+        else{
+
+            Gson gson = new Gson();
+            List<Area> listaAreas = new ArrayList<Area>();
+            listaAreas = gson.fromJson(json,new TypeToken<ArrayList<Area>>(){}.getType());
+
+            int i=0;
+            boolean encontrado = false;
+
+            do {
+
+                Area area = listaAreas.get(i);
+                if(area.getName().equals(name)){
+                    encontrado=true;
+                    idArea=String.valueOf(area.getId());
+                }
+                i++;
+
+            }while ( encontrado==false && i<listaAreas.size());
+
+            return idArea;
+
+        }
+
 
     }
 

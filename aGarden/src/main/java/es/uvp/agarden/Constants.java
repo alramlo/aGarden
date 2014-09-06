@@ -19,6 +19,10 @@ public class Constants {
     //urls
     public static final String  URL_LOGIN = ":8080/RESTfulJardin/services/session/authentication";
     public static final String  URL_AREAS = ":8080/RESTfulJardin/services/resources/getAreas";
+    public static final String  URL_ELEMENTOS_CONTROL = ":8080/RESTfulJardin/services/resources/controlElementsByArea";
+    public static final String  URL_CONTROL_CODES = ":8080/RESTfulJardin/services/resources/controlCodesByArea";
+
+
 
 
 

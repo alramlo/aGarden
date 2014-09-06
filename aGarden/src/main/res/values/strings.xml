@@ -37,4 +37,5 @@
     <string name="pestañaOperaciones">Operaciones</string>
     <string name="pestañaEstado">Estado</string>
     <string name="inicio">Inicie sesión</string>
+    <string name="errorSesion">Error en la sesión de usuario.</string>
 </resources>
